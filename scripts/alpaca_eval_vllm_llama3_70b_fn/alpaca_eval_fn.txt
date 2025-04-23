@@ -18,11 +18,12 @@ Here are the outputs of the models:
         "answer": """{output_2}"""
     }
 ]
-Now please rank the models by the quality of their answers, so that the model with rank 1 has the best output. Then return a list of the model names and ranks, i.e., produce the following output:
+Now please rank the models by the quality of their answers, so that the model with rank 1 has the best output and the model with rank 2 has the worse output. Do not use any other rank values. Then return a list of the model names and ranks, i.e., produce the following output:
 [
-    {'model': <model-name>, 'rank': <model-rank>},
-    {'model': <model-name>, 'rank': <model-rank>}
+    {'model': <model-name>, 'rank': <1 or 2>},
+    {'model': <model-name>, 'rank': <1 or 2>}
 ]
+
 Your response must be a valid Python dictionary and should contain nothing else because we will directly execute it in Python. Please provide the ranking that the majority of humans would give.
 <|im_end|>
 <|im_start|>assistant
